@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Crowd Sourced Travel Planner",
+    "desc": "Capstone project made with two teammates at OSU. Web app that allows users to plan trips based on other users' experience. Made with Flask, Next.js, MySQL. ",
+    "image": "travelplanner",
+    "category": "web",
+    "links": {
+      "view": "https://travel-planner-beta.vercel.app/",
+      "code": "https://github.com/boswelas/travel_planner"
+    }
+  }
+]
