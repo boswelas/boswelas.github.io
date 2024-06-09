@@ -452,7 +452,7 @@ header .navbar ul li a:hover {
     padding: 2rem;
     width: 90%;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .skills .container .row {
@@ -527,7 +527,14 @@ header .navbar ul li a:hover {
 /* education section starts */
 .education {
     padding-top: 8rem;
-    min-height: 100vh;
+    min-height: 80vh;
+}
+
+.education .heading {
+    font-size: 4rem;
+    color: rgb(32, 32, 32);
+    font-weight: 600;
+    text-align: center;
 }
 
 .education h1 {
@@ -551,7 +558,7 @@ header .navbar ul li a:hover {
     box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, .3);
     text-align: center;
     position: relative;
-    margin-top: 2rem;
+    margin-top: 1rem;
     overflow: hidden;
     transition: 0.3s;
     background: rgb(252, 252, 252);
@@ -651,7 +658,6 @@ header .navbar ul li a:hover {
 .project {
     background: #ffffff;
     padding-top: 8rem;
-
 }
 
 .project h2 {
@@ -662,7 +668,7 @@ header .navbar ul li a:hover {
 .project .box-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 4rem;
     margin: 2rem;
 }
 
@@ -673,6 +679,7 @@ header .navbar ul li a:hover {
     position: relative;
     overflow: hidden;
     height: 30rem;
+
 }
 
 .project .box-container .box img {
