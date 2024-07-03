@@ -1,7 +1,17 @@
 [
   {
+    "name": "Web Scraper Battle Simulator",
+    "desc": "See which Star Wars characters would win in battle. Made with Python, Flask, Typescript, Next.js, PostgreSQL.",
+    "image": "starwars",
+    "category": "web",
+    "links": {
+      "view": "https://starwars-battle.vercel.app/",
+      "code": "https://github.com/boswelas/starwars_battle"
+    }
+  },
+  {
     "name": "My Market",
-    "desc": "An online marketplace where users can buy and sell their used items. Made with TypeScript, Next.js, PostgreSQL. ",
+    "desc": "A serverless marketplace where users can buy and sell their used items. Made with TypeScript, Next.js, PostgreSQL.",
     "image": "cart",
     "category": "web",
     "links": {
@@ -11,11 +21,11 @@
   },
   {
     "name": "Crowd Sourced Travel Planner",
-    "desc": "Capstone project made with two teammates at OSU. Web app that allows users to plan trips based on other users' experience. Made with Flask, Next.js, MySQL. ",
+    "desc": "Capstone project made with two teammates at OSU. Web app that allows users to plan trips based on other users' experiences. Made with Flask, Next.js, MySQL. ",
     "image": "travelplanner",
     "category": "web",
     "links": {
-      "view": "https://travel-planner-beta.vercel.app/",
+      "view": "https://github.com/boswelas/travel_planner",
       "code": "https://github.com/boswelas/travel_planner"
     }
   }
