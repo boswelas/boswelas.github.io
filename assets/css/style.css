@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -16,12 +18,13 @@ html {
 
 body {
     background: #f7f7f7;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
+    font-weight: 200;
 }
 
 *::selection {
-    background: #1d7ca8;
-    color: #fff;
+    background: #f7f7f7;
+    color: #DEDEDE;
 }
 
 html {
@@ -60,12 +63,24 @@ header {
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 1.7rem 10%;
-    height: 6.5rem;
+    height: 8rem;
     background-color: #fff;
-    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+    box-shadow: 0 1px 2px rgba(146, 161, 176, 0.3);
 }
+
+.p {
+    font-family: "Roboto";
+    font-weight: 200;
+}
+
+.h3 {
+    font-family: "Roboto";
+    font-weight: 200;
+}
+
+
 
 section {
     min-height: 100vh;
@@ -73,17 +88,47 @@ section {
 }
 
 .heading {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     color: rgb(32, 32, 32);
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
+    font-family: "Roboto";
+
+    margin-top: 1rem;
+}
+
+.heading2 {
+    font-size: 2.5rem;
+    font-family: "Roboto";
+
+    color: rgb(32, 32, 32);
+    font-weight: 400;
+    text-align: center;
+}
+
+.logo {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.title {
+    margin-left: 1.5rem;
+    font-family: "Roboto";
+    font-weight: 400;
+
+}
+
+.underline {
+    align-items: center;
+    justify-items: center;
+    width: 10rem;
 }
 
 header .navbar ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-left: 60rem;
 }
 
 header .navbar li {
@@ -93,7 +138,9 @@ header .navbar li {
 header .navbar ul li a {
     font-size: 1.57rem;
     color: #000000;
+    font-family: "Roboto";
     font-weight: 200;
+
     letter-spacing: 0.04rem;
     transition: 0s;
     position: relative;
@@ -106,7 +153,6 @@ header .navbar ul li a:before {
     height: 135%;
     top: -17%;
     left: -22%;
-    background-color: #1d7ca8;
     opacity: 0;
     z-index: -1;
 }
@@ -124,8 +170,9 @@ header .navbar ul li a.active:before {
 
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
-    color: #fff;
+    color: #5532A2;
     padding: 0.5rem 0;
+    font-weight: 600;
 }
 
 /* navbar ends */
@@ -139,9 +186,10 @@ header .navbar ul li a:hover {
     gap: 1.5rem;
     min-height: 100vh;
     align-items: center;
-    background-image: url("../images/whitecrumpled.png");
+    background-image: url("../images/lines.jpg");
     background-size: cover;
     filter: brightness(100%);
+
 }
 
 .home::before {
@@ -157,31 +205,33 @@ header .navbar ul li a:hover {
     flex: 1 1 40rem;
     padding-top: 1rem;
     z-index: 1;
+    margin-top: 14rem;
+    margin-left: 6rem;
 }
 
 .home .content h2 {
     font-size: 5rem;
-    font-weight: 800;
+    font-weight: 400;
     color: hsl(0, 0%, 0%);
 }
 
 .home .content h2 span {
     font-size: 5rem;
-    font-weight: 800;
-    color: #dc457e;
+    font-weight: 400;
+    color: #5532A2;
 }
 
 .home .content p {
     font-size: 3.5rem;
     color: #000;
-    font-weight: 600;
+    font-weight: 400;
     padding: 1rem 0;
 }
 
 .home .content p span {
     font-size: 3.5rem;
-    color: #FF8C00;
-    font-weight: 600;
+    color: #5532A2;
+    font-weight: 400;
     padding: 1rem 0;
 }
 
@@ -193,9 +243,9 @@ header .navbar ul li a:hover {
     border-radius: .7rem;
     transition: 0.5s;
     color: #fff;
-    background: #1d7ca8;
-    box-shadow: 0px 5px 18px rgb(21, 76, 121);
-    font-family: "Roboto", sans-serif;
+    background: #5532A2;
+    box-shadow: 0px 3px 12px #8A68D6;
+    font-family: "Roboto ", sans-serif;
 }
 
 .home .btn span {
@@ -211,7 +261,7 @@ header .navbar ul li a:hover {
 }
 
 .home .btn:hover {
-    background: #2596be;
+    background: #683EC4;
 }
 
 .home .btn:hover i {
@@ -239,7 +289,7 @@ header .navbar ul li a:hover {
     font-size: 3rem;
     display: inline-block;
     line-height: 50px;
-    color: rgb(21, 76, 121);
+    color: #5532A2;
     background-color: #fff;
     border: .5px solid #0000004f;
     width: 50px;
@@ -270,112 +320,72 @@ header .navbar ul li a:hover {
 
 
 /* social icons end */
-
-/* home media queries starts*/
-@media (max-width: 450px) {
-    .home .btn {
-        margin: 4rem 0;
-    }
-
-    .socials {
-        margin-top: 12rem;
-    }
-
-    .home .image img {
-        margin-top: -12rem;
-    }
-
-    .home .content p {
-        font-size: 2.2rem;
-    }
-
-    .home .content p span {
-        font-size: 2.2rem;
-    }
-}
-
-/* home media queries ends*/
 /* home section end */
 
 /* about section starts */
 .about {
     padding-top: 8rem;
-    background-color: #EED0CC !important;
     min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.about .heading {
+    text-decoration: none;
+    position: relative;
+}
+
+.about .heading:after {
+    content: '';
+    width: 5%;
+    position: absolute;
+    left: 47.5%;
+    bottom: -10px;
+    border-width: 0 0 5px;
+    border-style: solid;
+    color: #683EC4;
+    border-radius: 0.5rem;
+
 }
 
 .about .row {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    flex-wrap: wrap;
-    /* padding: 4rem; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8rem;
+    margin-top: 5rem;
+
 }
 
-.about .row .image {
+.about .heading-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
     text-align: center;
-    flex: 1 1 35rem;
-    width: 50rem;
-    height: 50rem;
 }
 
-.about .row .image img {
-    margin: 4rem;
-    width: 30rem;
-    height: 30rem;
-    border-radius: 5%;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-    mix-blend-mode: luminosity;
-    transition: 0.3s;
-    cursor: pointer;
+.about .heading3 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #696969;
 }
 
-.about .row .content {
-    flex: 1 1 45rem;
-    padding: 3rem;
+.about .body-text {
+    font-size: 2rem;
+    margin-top: 2rem;
 
 }
 
-.about .row .content h3 {
-    color: rgb(27, 27, 27);
-    font-size: 2.5rem;
-    font-family: "Roboto", sans-serif;
-}
-
-.about .row .content .tag {
+.about .contact-text {
     font-size: 1.75rem;
-    margin-top: 1.5rem;
-    color: #020133;
     margin-top: 1rem;
-    font-family: "Roboto", sans-serif;
 }
 
-.about .row .content p {
-    font-size: 1.75rem;
-    margin-top: 1.5rem;
-    font-family: "Roboto", sans-serif;
-    text-transform: none;
-}
-
-.about .row .content .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    font-family: "Nunito";
-    font-weight: 600;
-}
-
-.about .row .content .box-container .box p {
-    text-transform: none;
-}
-
-.about .row .content .box-container .box p span {
-    color: #1d7ca8;
-    font-weight: bold;
+.about .box {
+    margin-top: 4rem;
 }
 
 .resumebtn {
-    margin-top: 6rem;
+    margin-top: 3rem;
 }
 
 .resumebtn .btn {
@@ -383,8 +393,8 @@ header .navbar ul li a:hover {
     border-radius: 0.7rem;
     transition: 0.3s;
     color: #fff;
-    background: #1d7ca8;
-    box-shadow: 0px 5px 18px rgb(21, 76, 121);
+    background: #5532A2;
+    box-shadow: 0px 3px 12px #8A68D6;
     font-family: "Roboto", sans-serif;
 
 }
@@ -402,147 +412,77 @@ header .navbar ul li a:hover {
 }
 
 .resumebtn .btn:hover {
-    background: #2596be;
+    background: #683EC4;
 }
 
 .resumebtn .btn:hover i {
     transform: translateX(5px);
 }
 
-/* about media queries starts*/
-@media screen and (max-width: 600px) {
-    .about .row .image {
-        margin-top: 2rem;
-    }
 
-    .about .row .image img {
-        margin: 0 auto;
-        width: 80%;
-        mix-blend-mode: normal;
-    }
-
-    .about .row {
-        padding: 0.5rem;
-        margin-bottom: 7rem;
-    }
-
-    .about .row .content {
-        padding: 1rem;
-    }
-
-    .about .row .content .box-container {
-        gap: 0;
-    }
-}
-
-/* about media queries ends*/
-/* about section ends */
-
-/* skills section starts */
-
-
-.skills h2 {
-    color: #000000;
-}
-
-.skills .container {
-    background: rgba(0, 0, 22, 0.164);
-    color: #000000;
-    border-radius: 1rem;
-    padding: 2rem;
-    width: 90%;
-    margin: auto;
-    margin-top: 1rem;
+.about .skills-container {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
     overflow: hidden;
 }
 
-.skills .container .row {
+.about .skills-container .skils-row {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    flex-wrap: wrap;
-    gap: 1.8rem;
+    gap: 1rem;
+
 }
 
-.skills .container .bar {
-    margin-bottom: 15px;
-    padding: 10px;
+.about .skills-container .span {
+    font-family: "Roboto";
+    font-weight: 200;
+}
+
+.about .skills-container .bar {
+    height: 8rem;
+    width: 8rem;
+    padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     background: #fff;
     transition: 0.2s;
-}
+    justify-content: center !important;
 
-.skills .container .bar:hover {
-    box-shadow: 1rem 0.7rem 1rem rgba(0, 0, 0, 0.4) !important;
 
 }
 
-.skills .container .bar .info {
+.about .skills-container .bar:hover {
+    box-shadow: .25rem 0.35rem .25rem rgba(0, 0, 0, 0.4) !important;
+
+}
+
+.about .skills-container .bar .info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    text-align: center;
     margin-top: 1rem;
 }
 
-.skills .container .bar .info i {
+.about .skills-container .bar .info i {
     font-size: 4rem;
 }
 
-.skills .container .bar .info img {
-    max-width: 35%;
-    max-height: 35%;
+.about .skills-container .bar .info img {
+    max-width: 50%;
+    max-height: 50%;
     align-self: center;
 }
 
-.skills .container .bar .info span {
-    font-size: 2rem;
-    font-weight: 500;
-    font-family: "Poppins";
+.about .skills-container .bar .info span {
+    font-size: 1.25rem;
+    font-weight: 200;
+    font-family: "Roboto";
     margin-left: 0.5rem;
+    text-wrap: wrap;
 }
 
-/* skills media queries starts*/
-@media screen and (max-width: 600px) {
-    .skills .container {
-        padding: 0;
-        margin: 0;
-    }
-
-    .skills .container .row {
-        grid-template-columns: repeat(2, 1fr);
-        margin: 1rem;
-        padding: 2rem 0.2rem 2rem 0.2rem;
-        gap: 1rem;
-    }
-
-    .skills .container {
-        margin-top: 5px;
-        width: 100%;
-    }
-}
-
-/* skills media queries ends*/
-/* skills section ends */
-
-/* education section starts */
-.education {
-    padding-top: 8rem;
-    min-height: 80vh;
-}
-
-.education .heading {
-    font-size: 4rem;
-    color: rgb(32, 32, 32);
-    font-weight: 600;
-    text-align: center;
-}
-
-.education h1 {
-    padding-top: 2rem;
-}
-
-.education .box-container {
+.about .education .box-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -550,13 +490,13 @@ header .navbar ul li a:hover {
     flex-direction: column;
 }
 
-.education .box-container .box {
+.about .education .box-container .box {
     display: flex;
     flex-direction: row;
-    width: 89%;
-    height: 25%;
+    height: 15%;
+    width: 97%;
     border-radius: 0.5rem;
-    box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, .3);
+    box-shadow: 0.1rem 0.25rem .5rem rgba(0, 0, 0, .3);
     text-align: center;
     position: relative;
     margin-top: 1rem;
@@ -566,98 +506,66 @@ header .navbar ul li a:hover {
 
 }
 
-.education .box-container .box:hover {
+.about .education .box-container .box:hover {
     transform: scale(1.03);
-    box-shadow: 1rem 0.7rem 1rem rgba(0, 0, 0, 0.4) !important;
+    box-shadow: .25rem 0.25rem .25rem rgba(0, 0, 0, 0.4) !important;
 }
 
-.education .box-container .box .image {
-    flex: 1 1 8rem;
-    width: 100%;
-
+.about .education .box-container .box .image {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    flex: 1 1 20rem;
 }
 
-.education .box-container .box img {
+.about .education .box-container .box img {
     object-fit: cover;
     position: relative;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
 }
 
-.education .box-container .box .content {
+.about .education .box-container .box .content {
     position: relative;
     display: flex;
     flex-direction: column;
     padding: 1rem;
     flex-wrap: wrap;
     flex: 1 1 70rem;
+    margin-top: .5rem;
 }
 
-.education .box-container .box .content h3 {
-    font-size: 2.5rem;
+.about .education .box-container .box .content h3 {
+    font-size: 1.5rem;
     color: #000000;
-    padding-top: 0.5rem 0;
-    font-weight: 600;
+    /* padding-top: 0.5rem 0; */
+    font-weight: 200;
     text-align: left;
     margin-left: 1rem;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
 }
 
-.education .box-container .box .content p {
-    font-size: 1.75rem;
+.about .education .box-container .box .content p {
+    font-size: 1.5rem;
     margin-left: 1rem;
     text-align: left;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
 }
 
-.education h4 {
-    font-size: 2rem;
+.about .education h4 {
+    font-size: 1.5rem;
     color: #000000;
     text-align: left;
     margin: 1rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
+    font-family: "Roboto";
+    font-weight: 200;
 }
 
-/* education media queries starts*/
-@media screen and (max-width: 600px) {
-    .education .box-container .box {
-        flex-direction: column;
-        width: 100%;
-    }
+/* about section ends */
 
-    .education .box-container .box .image {
-        width: 100%;
-        height: 25rem;
-    }
-
-    .education .box-container .box img {
-        width: 100%;
-    }
-
-    .education .box-container .box .content {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        flex-wrap: wrap;
-        flex: 0;
-    }
-
-    .education .btns {
-        margin-top: 2rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        flex-wrap: wrap;
-    }
-}
-
-/* education media queries ends*/
-/* education section ends */
 
 /* project section starts */
 .project {
-    background: #ffffff;
+    background: #FCFCFC;
     padding-top: 8rem;
 }
 
@@ -666,11 +574,30 @@ header .navbar ul li a:hover {
     padding: 1rem;
 }
 
+.project .heading {
+    text-decoration: none;
+    position: relative;
+}
+
+.project .heading:after {
+    content: '';
+    width: 5%;
+    position: absolute;
+    left: 47.5%;
+    bottom: -8px;
+    border-width: 0 0 5px;
+    border-style: solid;
+    color: #683EC4;
+    border-radius: 0.5rem;
+
+}
+
 .project .box-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
     margin: 2rem;
+    margin-top: 4rem;
 }
 
 .project .box-container .box {
@@ -742,12 +669,11 @@ header .navbar ul li a:hover {
 
 .project .desc .btns .btn {
     line-height: 0;
-    /* display: inline; */
     padding: 1.5rem 2.5rem;
     border-radius: 0.5rem;
     font-size: 1.5rem;
     color: #fff;
-    background: #1d7ca8;
+    background: #5532A2;
     margin-right: 1rem;
     margin-left: 1rem;
     overflow: hidden;
@@ -755,63 +681,51 @@ header .navbar ul li a:hover {
 }
 
 .project .desc .btns .btn:hover {
-    background: #2596be;
+    background: #683EC4;
 
-    .project .viewall {
-        display: flex;
-        justify-content: center;
-    }
-
-    .project .viewall .btn {
-        position: relative;
-        line-height: 0;
-        padding: 1.6rem 3rem;
-        border-radius: 0.5em;
-        transition: 0.5s;
-        color: rgb(255, 255, 255);
-        font-weight: 700;
-        border: 2px solid #fff;
-        box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
-        text-align: center;
-    }
-
-    .project .viewall .btn span {
-        font-weight: 600;
-        font-size: 1.7rem;
-        font-family: "Nunito", sans-serif;
-    }
-
-    .project .viewall .btn i {
-        margin-left: 0.3rem;
-        font-size: 1.5rem;
-        transition: 0.3s;
-    }
-
-    .project .viewall .btn:hover {
-        background: #fff;
-        color: #000;
-    }
-
-    .project .viewall .btn:hover i {
-        transform: translateX(5px);
-    }
 }
 
 /* project section ends */
 
 /* contact section starts */
 .contact {
+    padding-top: 6rem;
     min-height: 80vh;
-    padding-top: 8rem;
+}
+
+.contact .heading {
+    text-decoration: none;
+    position: relative;
+}
+
+.contact .heading:after {
+    content: '';
+    width: 5%;
+    position: absolute;
+    left: 47.5%;
+    bottom: -10px;
+    border-width: 0 0 5px;
+    border-style: solid;
+    color: #683EC4;
+    border-radius: 0.5rem;
+
 }
 
 .contact .container {
-    max-width: 1050px;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.contact .container-box {
+    width: 65%;
     background: #fff;
     border-radius: 1rem;
-    margin: 2rem 5rem;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    align-items: center;
 }
 
 .contact .container .content {
@@ -821,26 +735,10 @@ header .navbar ul li a:hover {
     padding: 1.5rem 2rem;
 }
 
-.contact .content .image-box {
-    max-width: 45%;
-    margin-left: 3rem;
-}
-
-.contact .content .image-box img {
-    width: 100%;
-    height: 35rem;
-    position: relative;
-}
-
 .contact .container .content form {
-    width: 45%;
+    width: 98%;
     margin-top: 1rem;
-}
-
-.contact .content form {
-    width: 45%;
-    margin-right: 4rem;
-    margin-bottom: 1rem;
+    align-items: center;
 }
 
 form .form-group {
@@ -876,7 +774,7 @@ form .message textarea {
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     border-radius: 5px;
-    border: 1px solid rgb(51, 51, 51);
+    border: .5px solid #F9F9F9;
     background: #F0F0F0;
 }
 
@@ -888,17 +786,17 @@ form .message textarea {
 .field input:focus,
 .message textarea:focus {
     padding-left: 47px;
-    border: 2px solid #1d7ca8;
+    border: .2rem solid #5532A2;
 }
 
 .field input:focus~i,
 .message textarea:focus~i {
-    color: #1d7ca8;
+    color: #5532A2;
 }
 
 form .message {
     position: relative;
-    margin: .8rem;
+    margin: .7rem;
     width: 100%;
 }
 
@@ -927,21 +825,22 @@ form .button-area {
 }
 
 .button-area button {
-    color: #fff;
+    color: #ffffff;
     border: none;
     outline: none;
     font-size: 1.8rem;
     cursor: pointer;
     border-radius: 5px;
     padding: 13px 25px;
-    background: #1d7ca8;
-    box-shadow: 0px 5px 18px rgb(21, 76, 121);
+    background: #5532A2;
+    box-shadow: 0px 3px 12px #8A68D6;
+    ;
     transition: 0.3s ease;
     font-family: "Nunito", sans-serif;
 }
 
 .button-area button:hover {
-    background: #2596be;
+    background: #683EC4;
 }
 
 .button-area span {
@@ -956,35 +855,11 @@ form .button-area {
     left: 2px;
     font-size: 1.5rem;
     transition: 0.3s;
-    color: #fff;
+    color: #ffffff;
 }
 
 .button-area button:hover i {
     left: 8px;
-}
-
-/* contact section media queries starts */
-@media (max-width: 900px) {
-    .contact {
-        min-height: 70vh;
-    }
-
-    .contact .container {
-        margin: 3rem 0 2rem 0;
-    }
-
-    .contact .container .content {
-        padding: 18px 12px;
-    }
-
-    .contact .content .image-box {
-        display: none;
-    }
-
-    .contact .content form {
-        width: 100%;
-        margin-right: 2rem;
-    }
 }
 
 /* contact section media queries ends */
@@ -994,7 +869,7 @@ form .button-area {
 .footer {
     min-height: auto;
     padding-top: 0;
-    background: #1d7ca8;
+    background: #5532A2;
 }
 
 .footer .box-container {
@@ -1013,32 +888,32 @@ form .button-area {
 
 .footer .box-container .box h3 {
     font-size: 2.5rem;
-    color: #fff;
+    color: #F0F0F0;
     padding-bottom: 1rem;
     font-weight: normal;
 }
 
 .footer .box-container .box p {
     font-size: 1.5rem;
-    color: #ccc;
+    color: #BFBFBF;
     padding: 0.7rem 0;
     text-transform: none;
 }
 
 .footer .box-container .box p i {
     padding-right: 1rem;
-    color: #ffae00;
+    color: #BFBFBF;
 }
 
 .footer .box-container .box a {
     font-size: 1.5rem;
-    color: rgb(238, 238, 238);
+    color: #BFBFBF;
     padding: 0.3rem 0;
     display: block;
 }
 
 .footer .box-container .box a:hover {
-    color: #ffae00;
+    color: #ffffff;
 }
 
 .footer .box-container .box .share {
@@ -1056,8 +931,8 @@ form .button-area {
     font-size: 1.7rem;
     margin-right: 1rem;
     transition: 0.2s;
-    background: rgb(230, 230, 230);
-    color: #02094b;
+    background: #BFBFBF;
+    color: #5532A2;
     border: none;
 }
 
@@ -1065,20 +940,9 @@ form .button-area {
     background: transparent;
     transform: scale(0.98);
     border: 0.1rem solid rgb(180, 178, 178);
-    color: #ffae00;
+    color: #ffffff;
 }
 
-
-.footer .credit a {
-    color: #ffae00;
-}
-
-.footer .fa {
-    color: #e90606;
-    margin: 0 0.3rem;
-    font-size: 1.5rem;
-    animation: pound 0.35s infinite alternate;
-}
 
 @-webkit-keyframes pound {
     to {
@@ -1107,20 +971,3 @@ form .button-area {
 }
 
 /* footer section ends */
-
-/* common media queries starts*/
-@media (max-width: 450px) {
-    html {
-        font-size: 55%;
-    }
-
-    body {
-        padding-right: 0;
-    }
-
-    section {
-        padding: 2rem;
-    }
-}
-
-/* common media queries ends*/
