@@ -63,7 +63,6 @@ header {
     z-index: 1000;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     padding: 1.7rem 10%;
     height: 8rem;
     background-color: #fff;
@@ -77,7 +76,7 @@ header {
 
 .h3 {
     font-family: "Roboto";
-    font-weight: 200;
+    font-weight: 300;
 }
 
 
@@ -136,11 +135,10 @@ header .navbar li {
 }
 
 header .navbar ul li a {
-    font-size: 1.57rem;
+    font-size: 1.8rem;
     color: #000000;
     font-family: "Roboto";
-    font-weight: 200;
-
+    font-weight: 300;
     letter-spacing: 0.04rem;
     transition: 0s;
     position: relative;
@@ -239,12 +237,12 @@ header .navbar ul li a:hover {
     margin-top: 1rem;
     position: absolute;
     line-height: 0;
-    padding: 1.6rem 3rem;
-    border-radius: .7rem;
+    padding: 1.3rem 1.5rem;
+    border-radius: .6rem;
     transition: 0.5s;
     color: #fff;
     background: #5532A2;
-    box-shadow: 0px 3px 12px #8A68D6;
+    box-shadow: 0px 2px 6px #8A68D6;
     font-family: "Roboto ", sans-serif;
 }
 
@@ -261,6 +259,7 @@ header .navbar ul li a:hover {
 }
 
 .home .btn:hover {
+    transform: scale(1.03);
     background: #683EC4;
 }
 
@@ -310,11 +309,13 @@ header .navbar ul li a:hover {
 }
 
 .social-icons a.github:hover {
+    transform: scale(1.03);
     background-color: #0e0e0e;
 }
 
 
 .social-icons a.linkedin:hover {
+    transform: scale(1.03);
     background-color: #1d7ca8;
 }
 
@@ -350,7 +351,7 @@ header .navbar ul li a:hover {
 .about .row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 8rem;
+    gap: 10rem;
     margin-top: 5rem;
 
 }
@@ -359,25 +360,36 @@ header .navbar ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 0;
     text-align: center;
+    margin-bottom: .5rem;
 }
 
 .about .heading3 {
-    margin-top: 2rem;
+    margin-top: 4rem;
     font-size: 2rem;
     color: #696969;
+    font-family: "Roboto";
+    font-weight: 400;
 }
 
-.about .body-text {
-    font-size: 2rem;
-    margin-top: 2rem;
 
+.about .body-text {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+
+}
+
+.about .contact-link {
+    font-weight: 400;
+    text-decoration: underline;
+    margin-top: .2rem;
 }
 
 .about .contact-text {
-    font-size: 1.75rem;
-    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: .5rem;
+
 }
 
 .about .box {
@@ -389,13 +401,15 @@ header .navbar ul li a:hover {
 }
 
 .resumebtn .btn {
-    padding: 1.7rem 3rem;
-    border-radius: 0.7rem;
-    transition: 0.3s;
+    position: absolute;
+    line-height: 0;
+    padding: 1.3rem 1.5rem;
+    border-radius: .6rem;
+    transition: 0.5s;
     color: #fff;
     background: #5532A2;
     box-shadow: 0px 3px 12px #8A68D6;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto ", sans-serif;
 
 }
 
@@ -412,6 +426,7 @@ header .navbar ul li a:hover {
 }
 
 .resumebtn .btn:hover {
+    transform: scale(1.03);
     background: #683EC4;
 }
 
@@ -422,8 +437,8 @@ header .navbar ul li a:hover {
 
 .about .skills-container {
     padding: 1rem;
-    margin-bottom: 1.5rem;
     overflow: hidden;
+    margin-bottom: 2.5rem;
 }
 
 .about .skills-container .skils-row {
@@ -441,17 +456,16 @@ header .navbar ul li a:hover {
 .about .skills-container .bar {
     height: 8rem;
     width: 8rem;
-    padding: 1rem;
+    padding: .5rem;
     border-radius: 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     background: #fff;
     transition: 0.2s;
     justify-content: center !important;
-
-
 }
 
 .about .skills-container .bar:hover {
+    transform: scale(1.03);
     box-shadow: .25rem 0.35rem .25rem rgba(0, 0, 0, 0.4) !important;
 
 }
@@ -496,7 +510,7 @@ header .navbar ul li a:hover {
     height: 15%;
     width: 97%;
     border-radius: 0.5rem;
-    box-shadow: 0.1rem 0.25rem .5rem rgba(0, 0, 0, .3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
     position: relative;
     margin-top: 1rem;
@@ -508,13 +522,14 @@ header .navbar ul li a:hover {
 
 .about .education .box-container .box:hover {
     transform: scale(1.03);
-    box-shadow: .25rem 0.25rem .25rem rgba(0, 0, 0, 0.4) !important;
+    box-shadow: .25rem 0.35rem .25rem rgba(0, 0, 0, 0.4) !important;
 }
 
 .about .education .box-container .box .image {
-    margin-top: 2rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
     margin-left: 1rem;
-    flex: 1 1 20rem;
+    flex: 1 1 25rem;
 }
 
 .about .education .box-container .box img {
@@ -549,6 +564,34 @@ header .navbar ul li a:hover {
     margin-left: 1rem;
     text-align: left;
     font-family: "Roboto";
+}
+
+.about .education .box-container .box .content .degree {
+    font-size: 1.75rem;
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+.about .education .box-container .box .content .school {
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto";
+    font-weight: 200;
+    margin-top: .25rem;
+    margin-bottom: 0rem;
+}
+
+.about .education .box-container .box .content .gpa {
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto";
+    font-weight: 200;
+    margin-top: .25rem;
+    margin-bottom: 1.3rem;
 }
 
 .about .education h4 {
@@ -640,8 +683,8 @@ header .navbar ul li a:hover {
 }
 
 .project .box-container .box .content .tag h3 {
-    font-size: 2rem;
-    font-weight: 200;
+    font-size: 1.8rem;
+    font-weight: 400;
 }
 
 .project .box-container .box:hover .content {
@@ -669,11 +712,14 @@ header .navbar ul li a:hover {
 
 .project .desc .btns .btn {
     line-height: 0;
-    padding: 1.5rem 2.5rem;
-    border-radius: 0.5rem;
-    font-size: 1.5rem;
+    padding: 1.3rem 1.5rem;
+    border-radius: .6rem;
+    transition: 0.5s;
     color: #fff;
     background: #5532A2;
+    box-shadow: 0px 3px 12px #8A68D6;
+    font-family: "Roboto ", sans-serif;
+    font-size: 1.25rem;
     margin-right: 1rem;
     margin-left: 1rem;
     overflow: hidden;
@@ -681,8 +727,8 @@ header .navbar ul li a:hover {
 }
 
 .project .desc .btns .btn:hover {
+    transform: scale(1.03);
     background: #683EC4;
-
 }
 
 /* project section ends */
@@ -840,6 +886,8 @@ form .button-area {
 }
 
 .button-area button:hover {
+    transform: scale(1.03);
+
     background: #683EC4;
 }
 
