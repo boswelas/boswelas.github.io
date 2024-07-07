@@ -367,7 +367,7 @@ header .navbar ul li a:hover {
 .about .heading3 {
     margin-top: 4rem;
     font-size: 2rem;
-    color: #696969;
+    color: #5532A2;
     font-family: "Roboto";
     font-weight: 400;
 }
@@ -376,7 +376,7 @@ header .navbar ul li a:hover {
 .about .body-text {
     font-size: 1.8rem;
     margin-top: 1.5rem;
-
+    font-weight: 300;
 }
 
 .about .contact-link {
@@ -488,11 +488,13 @@ header .navbar ul li a:hover {
     align-self: center;
 }
 
+
 .about .skills-container .bar .info span {
     font-size: 1.25rem;
-    font-weight: 200;
+    font-weight: 300;
     font-family: "Roboto";
     margin-left: 0.5rem;
+    margin-top: .2rem;
     text-wrap: wrap;
 }
 
@@ -553,7 +555,7 @@ header .navbar ul li a:hover {
     font-size: 1.5rem;
     color: #000000;
     /* padding-top: 0.5rem 0; */
-    font-weight: 200;
+    font-weight: 300;
     text-align: left;
     margin-left: 1rem;
     font-family: "Roboto";
@@ -564,6 +566,7 @@ header .navbar ul li a:hover {
     margin-left: 1rem;
     text-align: left;
     font-family: "Roboto";
+    font-weight: 300;
 }
 
 .about .education .box-container .box .content .degree {
@@ -571,7 +574,7 @@ header .navbar ul li a:hover {
     color: #000000;
     text-align: left;
     font-family: "Roboto";
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .about .education .box-container .box .content .school {
@@ -579,7 +582,7 @@ header .navbar ul li a:hover {
     color: #000000;
     text-align: left;
     font-family: "Roboto";
-    font-weight: 200;
+    font-weight: 300;
     margin-top: .25rem;
     margin-bottom: 0rem;
 }
@@ -589,7 +592,7 @@ header .navbar ul li a:hover {
     color: #000000;
     text-align: left;
     font-family: "Roboto";
-    font-weight: 200;
+    font-weight: 300;
     margin-top: .25rem;
     margin-bottom: 1.3rem;
 }
@@ -700,13 +703,16 @@ header .navbar ul li a:hover {
 
 .project .desc p {
     font-size: 1.5rem;
+    font-weight: 300;
 }
 
 .project .desc .btns {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
     margin-top: 2rem;
+    align-items: center;
+    margin-left: 10%;
 
 }
 
@@ -887,7 +893,6 @@ form .button-area {
 
 .button-area button:hover {
     transform: scale(1.03);
-
     background: #683EC4;
 }
 
