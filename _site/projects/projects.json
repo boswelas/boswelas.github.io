@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Serverless Marketplace",
+    "desc": "A serverless online marketplace where users can buy and sell their used items. Made with TypeScript, Next.js, PostgreSQL.",
+    "image": "cart",
+    "category": "web",
+    "links": {
+      "view": "https://my-market-henna.vercel.app/",
+      "code": "https://github.com/boswelas/my-market"
+    }
+  },
+  {
+    "name": "Web Scraper Battle Simulator",
+    "desc": "See which Star Wars characters would win in battle. Made with Python, Flask, Typescript, Next.js, PostgreSQL.",
+    "image": "starwars",
+    "category": "web",
+    "links": {
+      "view": "https://starwars-battle.vercel.app/",
+      "code": "https://github.com/boswelas/starwars_battle"
+    }
+  },
+  {
+    "name": "Crowd Sourced Travel Planner",
+    "desc": "Capstone project made with two teammates at OSU. Web app that allows users to plan trips based on other users' experiences. Made with Flask, Next.js, MySQL. ",
+    "image": "travelplanner",
+    "category": "web",
+    "links": {
+      "view": "https://github.com/boswelas/travel_planner",
+      "code": "https://github.com/boswelas/travel_planner"
+    }
+  }
+]
