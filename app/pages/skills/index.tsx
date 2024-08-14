@@ -61,7 +61,7 @@ export default function Skills() {
                 <div className="education w-[85%] h-[50%] mt-4 ml-12 relative">
                     <h2 className="text-4xl ml-4 text-[#fff0d5] mb-5 font-semibold">Education</h2>
                     <div className="absolute w-[94%] h-[80%] blue-lines-container rounded-xl opacity-80">
-                        <div className="blue-lines w-full h-full"></div>
+                        <div className="blue-lines w-full h-full rounded-lg"></div>
                     </div>
 
                     <div className="box-container z-20 relative ml-5 mt-8">

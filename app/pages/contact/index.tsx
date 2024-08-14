@@ -31,14 +31,13 @@ export default function Contact() {
                 </h1>
             </div>
             <div>
-                <img src="./keyboard.png" className="h-96 absolute top-0 right-0 z-0 rotate-[30deg]" />
+                <img src="./keyboard.png" className="h-[50%] absolute top-0 right-0 z-0 rotate-[30deg]" />
             </div>
             <div className="flex-grow flex ml-20 mt-14">
                 <div className="green-lines h-[45%] w-[47%] rounded-2xl z-0 absolute"></div>
-
                 <div className="bg-[#fff0d5] border-[#0d7d6d] border-4 h-[60%] w-[50%] rounded-2xl z-10 mt-10 ml-12">
-                    <div className="flex flex-col ml-10">
-                        <h2 className="text-2xl font-semibold mt-8">I'm always up for a chat.</h2>
+                    <div className="flex flex-col justify-center h-full ml-10">
+                        <h2 className="text-2xl font-semibold">I'm always up for a chat.</h2>
                         <span className="text-xl mt-6 mb-2 ">
                             <Link
                                 href="mailto:anboswell10@gmail.com"
