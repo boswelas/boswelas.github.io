@@ -32,7 +32,7 @@ export default function Menu() {
     }, []);
 
     return (
-        <nav className="fixed top-6 w-[25%] text-white z-50 *:text-sm">
+        <nav className="fixed top-6 w-[25%] text-white z-50 *:text-sm hidden lg:block">
             <ul className="flex justify-around p-4 font-semibold">
                 <li>
                     <Link href="#home" className="flex flex-col items-center gap-px">
