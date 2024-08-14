@@ -34,7 +34,7 @@ export default function Skills() {
         <div className="h-screen bg-[#0d7d6d] border-[#161c33] border-8 relative overflow-hidden">
             <div className="absolute mt-20 ml-4 left-4 w-[50%] h-24 z-0 dot opacity-80" />
             <div className="relative z-10">
-                <h1 className="mt-24 ml-6 text-7xl text-white font-bold">My skills
+                <h1 className="mt-6 lg:mt-24 ml-6 text-7xl text-white font-bold">My skills
                     <span className='text-[#161c33]'>.</span>
                 </h1>
             </div>
