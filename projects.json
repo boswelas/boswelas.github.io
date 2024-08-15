@@ -1,9 +1,19 @@
 [
     {
         "name": "Serverless Marketplace",
-        "desc": "A serverless online marketplace where users can buy and sell their used items. Made with TypeScript, Next.js, PostgreSQL.",
-        "image": "cart",
+        "desc": "A serverless online marketplace where users can buy and sell used items. Browse items or create and edit your own. Post on the message board or chat with other buyer/sellers.",
+        "image": "./cart.jpeg",
         "category": "web",
+        "technologies": [
+            "TypeScript",
+            "PostgreSQL",
+            "Prisma",
+            "Next.js",
+            "TailwindCSS",
+            "Supabase",
+            "Vercel",
+            "Railway"
+        ],
         "links": {
             "view": "https://my-market-henna.vercel.app/",
             "code": "https://github.com/boswelas/my-market"
@@ -11,9 +21,21 @@
     },
     {
         "name": "Web Scraper Battle Simulator",
-        "desc": "See which Star Wars characters would win in battle. Made with Python, Flask, Typescript, Next.js, PostgreSQL.",
-        "image": "starwars",
+        "desc": "See which Star Wars characters would win in battle. Details are scraped from the Star Wars Fandom, battles are determined via a custom battle calculator, and stories are generated via ChatGPT's API",
+        "image": "./starwars.jpeg",
         "category": "web",
+        "technologies": [
+            "Python",
+            "PostgreSQL",
+            "Playwright",
+            "BeautifulSoup",
+            "TypeScript",
+            "Next.js",
+            "ChatGPT",
+            "TailwindCSS",
+            "Vercel",
+            "Railway"
+        ],
         "links": {
             "view": "https://starwars-battle.vercel.app/",
             "code": "https://github.com/boswelas/starwars_battle"
@@ -22,8 +44,15 @@
     {
         "name": "Crowd Sourced Travel Planner",
         "desc": "Capstone project made with two teammates at OSU. Web app that allows users to plan trips based on other users' experiences. Made with Flask, Next.js, MySQL. ",
-        "image": "travelplanner",
+        "image": "./travelplanner.jpeg",
         "category": "web",
+        "technologies": [
+            "Python",
+            "Flask",
+            "MySQL",
+            "JavaScript",
+            "Next.js"
+        ],
         "links": {
             "code": "https://github.com/boswelas/travel_planner"
         }
