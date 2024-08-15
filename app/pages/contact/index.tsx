@@ -64,7 +64,7 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-            <div className="absolute bottom-0 w-full opacity-90">
+            <div className="absolute bottom-0 w-full opacity-90 hover:shadow-white hover:shadow-2xl hover:opacity-100">
                 <div className="border-b-[.9rem] border-[#fff0d5] w-full"></div>
                 <div className="border-b-[1.8rem] border-[#0d7d6d] w-full mt-1"></div>
                 <div className="border-b-[.7rem] mt-1 mb-5 border-[#ff8e4d] w-full"></div>

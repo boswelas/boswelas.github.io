@@ -30,7 +30,7 @@ export default function Home() {
                     <img
                         src="./computer.png"
                         alt="Computer"
-                        className="absolute top-0 right-0 h-[55%] object-cover mt-[12%] mr-[15%] hidden lg:block hover:h-[60%] hover:mt-[10%] hover:mr-[13%]"
+                        className="absolute top-0 right-0 h-[60%] object-cover mt-[10%] mr-[12%] hidden lg:block hover:scale-110 "
                     />
                 </div>
             </div>

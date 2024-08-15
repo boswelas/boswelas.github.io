@@ -1,7 +1,7 @@
 [
     {
         "name": "Serverless Marketplace",
-        "desc": "A serverless online marketplace where users can buy and sell used items. Browse items or create and edit your own. Post on the message board or chat with other buyer/sellers.",
+        "desc": "A serverless online marketplace where users can buy and sell used items. Browse items or create and edit your own. Post on the message board or chat with other buyers/sellers.",
         "image": "./cart.jpeg",
         "category": "web",
         "technologies": [
@@ -21,7 +21,7 @@
     },
     {
         "name": "Web Scraper Battle Simulator",
-        "desc": "See which Star Wars characters would win in battle. Details are scraped from the Star Wars Fandom, battles are determined via a custom battle calculator, and stories are generated via ChatGPT's API",
+        "desc": "See which Star Wars characters would win in battle. Details are scraped from the Star Wars Fandom, battles are determined via a custom battle calculator, and stories are generated via ChatGPT's API.",
         "image": "./starwars.jpeg",
         "category": "web",
         "technologies": [
@@ -43,7 +43,7 @@
     },
     {
         "name": "Crowd Sourced Travel Planner",
-        "desc": "Capstone project made with two teammates at OSU. Web app that allows users to plan trips based on other users' experiences. Made with Flask, Next.js, MySQL. ",
+        "desc": "Capstone project made with two teammates at OSU. Share your travel experiences complete with details, photos, and geolocations. Search for and rate other users' trips and save them to your own saved itineraries.",
         "image": "./travelplanner.jpeg",
         "category": "web",
         "technologies": [

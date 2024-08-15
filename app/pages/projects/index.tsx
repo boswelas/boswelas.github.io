@@ -20,7 +20,6 @@ export default function Projects() {
                 const moveY = (e.clientY / window.innerHeight) * 10;
                 orange_dots.style.transform = `translate(${moveX}px, ${moveY}px)`;
             }
-
         };
 
         document.addEventListener('mousemove', handleMouseMove);
@@ -32,12 +31,10 @@ export default function Projects() {
 
     return (
         <div className="min-h-screen bg-[#fff0d5] border-[#0d7d6d] border-8 relative overflow-hidden">
-            <div className="orange-stripe-background absolute top-0 left-0 h-10 w-[38%] mt-[10%] z-5" />
-            <div className="absolute bottom-8 left-0 z-0 ">
-                <img src="./green_waves.png"></img>
-            </div>
-            <div className="orange-dot absolute bottom-0 right-0 h-[60%] w-[15%] z-5 " />
-            <div className="relative z-10">
+            <div className="orange-stripe-background absolute top-0 left-5 h-10 w-[38%] mt-[9%] z-5" />
+            <div className="orange-dot absolute bottom-0 right-0 h-[60%] w-[15%]  z-10" />
+
+            <div className="relative z-20">
                 <h1 className="mt-6 lg:mt-24 ml-6 text-7xl text-[#0d7d6d] font-bold">
                     My Projects
                     <span className="text-[#ff8e4d]">.</span>
@@ -47,7 +44,6 @@ export default function Projects() {
             <div className="mb-10">
                 <ProjectTile />
             </div>
-
         </div>
     );
 }

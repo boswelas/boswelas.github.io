@@ -41,6 +41,10 @@
     opacity: .8;
 }
 
+.button-background {
+    background-color: #fff0d5;
+}
+
 .skills-container {
     padding: 1rem;
     overflow: hidden;
@@ -69,10 +73,10 @@
     position: relative;
 }
 
-.skills-container .bar:hover {
+/* .skills-container .bar:hover {
     transform: scale(1.08);
     box-shadow: 0.25rem 0.35rem 0.25rem rgba(0, 0, 0, 0.4) !important;
-}
+} */
 
 .skills-container .bar .info {
     display: flex;
@@ -119,10 +123,10 @@
     background: rgb(252, 252, 252);
 }
 
-.education .box-container .box:hover {
+/* .education .box-container .box:hover {
     transform: scale(1.03);
     box-shadow: .25rem 0.35rem .25rem rgba(0, 0, 0, 0.4) !important;
-}
+} */
 
 .education .box-container .box .image {
     margin-top: .5rem;
@@ -204,7 +208,6 @@
 .orange-dot {
     background-image: radial-gradient(#ff8e4d .1rem, transparent 1px);
     background-size: 16px 16px;
-    z-index: 0;
 
 }
 

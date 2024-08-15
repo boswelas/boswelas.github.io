@@ -5,10 +5,10 @@ import { useEffect } from 'react';
 export default function ProjectTile() {
     useEffect(() => {
         const handleMouseMove = (e: MouseEvent) => {
-            const orangeStripes = document.querySelectorAll('.orange-stripes') as NodeListOf<HTMLElement>;
+            const buttonBackground = document.querySelectorAll('.button-background') as NodeListOf<HTMLElement>;
 
-            orangeStripes.forEach((stripe) => {
-                const moveX = (e.clientX / window.innerWidth) * 5;
+            buttonBackground.forEach((stripe) => {
+                const moveX = (e.clientX / window.innerWidth) * 10;
                 const moveY = (e.clientY / window.innerHeight) * 10;
 
                 stripe.style.transform = `translate(${moveX}px, ${moveY}px)`;
@@ -23,7 +23,7 @@ export default function ProjectTile() {
     }, []);
 
     return (
-        <div className="mt-[3%] ml-[3%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-[3%] ml-[3%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {projects.map((project, index) => (
                 <div
                     key={index}
@@ -36,9 +36,9 @@ export default function ProjectTile() {
                         <div className="flex justify-center">
                             <span className="font-semibold text-[#161c33]">{project.name}</span>
                         </div>
-                        <ul className="text-xs mt-4 flex flex-row items-center justify-center gap-2 max-w-72 flex-wrap">
+                        <ul className="text-xs mt-2 flex flex-row items-center justify-center gap-2 max-w-72 flex-wrap opacity-80 overflow-hidden">
                             {project.technologies?.map((tech, i) => (
-                                <li key={i}>
+                                <li key={i} className='mt-1'>
                                     <span className="bg-[#fff0d5] rounded-lg p-1">{tech}</span>
                                 </li>
                             ))}
@@ -49,8 +49,8 @@ export default function ProjectTile() {
                             <div className="flex flex-row items-center justify-center gap-4 mt-6">
                                 {project.links.view && (
                                     <div className="relative inline-block">
-                                        <div className="absolute inset-0 orange-stripes z-0 opacity-60 h-[83%] w-[95%] rounded-lg " />
-                                        <div className="text-[#161c33] shadow-lg relative h-10 w-32 p-2 flex items-center justify-center rounded-xl border-2 border-[#0d7d6d] z-10 hover:bg-[#0d7d6d]">
+                                        <div className="absolute inset-0 button-background z-0 opacity-60 h-[83%] w-[95%] rounded-lg " />
+                                        <div className="text-[#161c33]  shadow-xl relative h-9 w-24 p-2 flex items-center justify-center rounded-xl border-2 border-[#0d7d6d] z-10 hover:bg-[#0d7d6d] hover:text-[#fff0d5] hover:border-[#fff0d5]">
                                             <a href={project.links.view} target="_blank" rel="noopener noreferrer">
                                                 <span>Live</span>
                                             </a>
@@ -60,8 +60,8 @@ export default function ProjectTile() {
 
                                 {project.links.code && (
                                     <div className="relative inline-block">
-                                        <div className="absolute inset-0 orange-stripes z-0 opacity-60 h-[83%] w-[95%] rounded-lg" />
-                                        <div className="text-[#161c33] shadow-lg  relative h-10 w-32 p-2 flex items-center justify-center rounded-xl border-2 border-[#0d7d6d] z-10 hover:bg-[#0d7d6d]">
+                                        <div className="absolute inset-0 button-background z-0 opacity-60 h-[83%] w-[95%] rounded-lg" />
+                                        <div className="text-[#161c33] shadow-xl  relative h-9 w-24 p-2 flex items-center justify-center rounded-xl border-2 border-[#0d7d6d] z-10 hover:bg-[#0d7d6d] hover:text-[#fff0d5] hover:border-[#fff0d5]">
                                             <a href={project.links.code} target="_blank" rel="noopener noreferrer">
                                                 <span>GitHub</span>
                                             </a>
