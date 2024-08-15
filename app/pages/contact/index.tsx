@@ -36,7 +36,7 @@ export default function Contact() {
                 <div className="green-lines h-[55%] w-[70%] lg:h-[45%] lg:w-[47%] rounded-2xl z-0 absolute"></div>
                 <div className="bg-[#fff0d5] border-[#0d7d6d] border-4 h-[70%] w-[80%] lg:h-[60%] lg:w-[50%] rounded-2xl z-10 mt-[5%] ml-[5%] lg:mt-10 lg:ml-12">
                     <div className="flex flex-col justify-center h-full ml-5 mr-5 lg:ml-10">
-                        <h2 className="text-2xl font-semibold">I'm always up for a chat.</h2>
+                        <h2 className="text-2xl font-semibold">I'm always up for a chat!</h2>
                         <span className="text-xl mt-6 mb-2 ">
                             <Link
                                 href="mailto:anboswell10@gmail.com"

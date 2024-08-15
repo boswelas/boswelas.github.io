@@ -30,7 +30,6 @@ export default function ResumeButton() {
                     target="_blank" ><span>Resume</span>
                 </a>
             </div>
-
         </div>
     );
 }

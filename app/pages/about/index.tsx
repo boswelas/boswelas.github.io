@@ -12,12 +12,11 @@ export default function Home() {
                     <div className="border-b-[1rem] border-[#ff8e4d] w-full mt-1"></div>
                 </div>
                 <div className="mt-[15%] ml-[3%] lg:mt-[13%] lg:ml-[8%]">
-                    <div className="flex flex-col max-w-full lg:max-w-[40%]">
+                    <div className="flex flex-col max-w-full lg:max-w-[45%]">
                         <h1 className="font-semibold text-7xl">Hi, I'm <span className="text-[#0d7d6d]">Ashley</span>.</h1>
                         <span className="mt-2 text-2xl">Thanks for dropping by!</span>
-                        <span className="mt-6 text-xl">I'm a <span className="text-[#0d7d6d] font-semibold">fullstack developer</span> based in Los Angeles.</span>
-                        <span className="text-xl">I love building intuitive, user-friendly applications.</span>
-                        <span className="text-xl">I especially like using <span className="text-[#0d7d6d] font-semibold">Python, Typescript, and React</span>.</span>
+                        <span className="mt-6 text-xl">I'm a <span className="text-[#0d7d6d] font-semibold">full-stack developer</span> who likes building intuitive, user-friendly applications.</span>
+                        <span className="text-xl mt-2">I especially enjoy using <span className="text-[#0d7d6d] font-semibold">Python, TypeScript, and React</span>.</span>
                     </div>
                     <div className="flex items-center mt-6 space-x-4">
                         <div className="">

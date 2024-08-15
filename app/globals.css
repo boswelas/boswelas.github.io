@@ -31,6 +31,16 @@
     z-index: 0;
 }
 
+.orange-stripe-background {
+    background: repeating-linear-gradient(45deg,
+            #ff8e4d,
+            #ff8e4d 2px,
+            transparent 2px,
+            transparent 10px);
+    z-index: 0;
+    opacity: .8;
+}
+
 .skills-container {
     padding: 1rem;
     overflow: hidden;
@@ -190,6 +200,14 @@
     background-size: 16px 16px;
     z-index: 0;
 }
+
+.orange-dot {
+    background-image: radial-gradient(#ff8e4d .1rem, transparent 1px);
+    background-size: 16px 16px;
+    z-index: 0;
+
+}
+
 
 .blue-lines {
     background: repeating-linear-gradient(45deg,
