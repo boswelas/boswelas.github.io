@@ -27,7 +27,7 @@ export default function ProjectTile() {
             {projects.map((project, index) => (
                 <div
                     key={index}
-                    className="group mb-[5%] h-80 w-72 bg-white border-[#0d7d6d] border-[.15rem] rounded-xl shadow-2xl relative overflow-hidden transition-all duration-300 hover:scale-110"
+                    className="group mb-[5%] h-80 w-72 bg-white border-[#0d7d6d] border-[.1rem] rounded-xl shadow-xl hover:shadow-2xl relative overflow-hidden transition-all duration-300 hover:scale-110"
                 >
                     <div className="h-52 w-72 rounded-t-xl">
                         <img src={project.image} alt={project.name} className="h-full w-full" />

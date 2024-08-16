@@ -73,11 +73,6 @@
     position: relative;
 }
 
-/* .skills-container .bar:hover {
-    transform: scale(1.08);
-    box-shadow: 0.25rem 0.35rem 0.25rem rgba(0, 0, 0, 0.4) !important;
-} */
-
 .skills-container .bar .info {
     display: flex;
     flex-direction: column;
@@ -115,18 +110,12 @@
     height: 15%;
     width: 97%;
     border-radius: 0.5rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
     position: relative;
     overflow: hidden;
     transition: 0.3s;
     background: rgb(252, 252, 252);
 }
-
-/* .education .box-container .box:hover {
-    transform: scale(1.03);
-    box-shadow: .25rem 0.35rem .25rem rgba(0, 0, 0, 0.4) !important;
-} */
 
 .education .box-container .box .image {
     margin-top: .5rem;

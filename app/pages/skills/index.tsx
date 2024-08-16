@@ -46,7 +46,7 @@ export default function Skills() {
                             <h2 className="text-4xl font-semibold ml-4 text-[#fff0d5]">{category.category}</h2>
                             <div className="skills-row ml-8 mt-2">
                                 {category.skills.map((skill) => (
-                                    <div key={skill.name} className="bar">
+                                    <div key={skill.name} className="bar hover:scale-105 hover:shadow-lg">
                                         <div className="info">
                                             <img src={skill.icon} alt={skill.name} />
                                             <span>{skill.name}</span>
@@ -65,7 +65,7 @@ export default function Skills() {
                     </div>
 
                     <div className="box-container z-20 pb-6 mt-2 relative md:ml-5 md:mt-8">
-                        <div className="box ">
+                        <div className="box hover:scale-105 hover:shadow-lg">
                             <div className="image hidden md:block">
                                 <img src='../osu.jpg' />
                             </div>
