@@ -25,7 +25,7 @@ export default function Contact() {
     return (
         <div className="h-screen bg-[#161c33] border-[#fff0d5] border-8 relative flex flex-col lg:overflow-hidden">
             <div className="relative z-10">
-                <h1 className="mt-6 lg:mt-24 ml-6 text-7xl text-[#ff8e4d] font-bold">Contact
+                <h1 className="mt-[6%] lg:mt-24 ml-[5%] text-7xl text-[#ff8e4d] font-bold">Contact
                     <span className='text-white'>.</span>
                 </h1>
             </div>

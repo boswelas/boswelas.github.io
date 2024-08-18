@@ -27,16 +27,16 @@ export default function ProjectTile() {
             {projects.map((project, index) => (
                 <div
                     key={index}
-                    className="group mb-[5%] h-80 w-72 bg-white border-[#0d7d6d] border-[.1rem] rounded-xl shadow-xl hover:shadow-2xl relative overflow-hidden transition-all duration-300 hover:scale-110"
+                    className="group mb-[5%] h-96 w-80 bg-white border-[#fff0d5] border-[.1rem] rounded-xl shadow-xl hover:shadow-2xl relative overflow-hidden transition-all duration-300 hover:scale-105"
                 >
-                    <div className="h-52 w-72 rounded-t-xl">
-                        <img src={project.image} alt={project.name} className="h-full w-full" />
+                    <div className="h-[60%] w-full rounded-t-xl">
+                        <img src={project.image} alt={project.name} className="h-full w-fit" />
                     </div>
-                    <div className="absolute bottom-0 left-0 w-full h-32 p-2 bg-white border-t border-[#161c33] transition-all duration-200 group-hover:h-72">
+                    <div className="absolute bottom-0 left-0 w-full h-[40%] p-2 bg-white border-t border-[#161c33] transition-all duration-200 group-hover:h-72">
                         <div className="flex justify-center">
-                            <span className="font-semibold text-[#161c33]">{project.name}</span>
+                            <span className="font-semibold text-[#161c33] text-lg">{project.name}</span>
                         </div>
-                        <ul className="text-xs mt-2 flex flex-row items-center justify-center gap-2 max-w-72 flex-wrap opacity-80 overflow-hidden">
+                        <ul className="text-xs mt-3 flex flex-row items-center justify-center gap-2 max-w-72 flex-wrap opacity-80 overflow-hidden">
                             {project.technologies?.map((tech, i) => (
                                 <li key={i} className='mt-1'>
                                     <span className="bg-[#fff0d5] rounded-lg p-1">{tech}</span>

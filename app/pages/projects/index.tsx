@@ -30,12 +30,12 @@ export default function Projects() {
     }, []);
 
     return (
-        <div className="min-h-screen bg-[#fff0d5] border-[#0d7d6d] border-8 relative overflow-hidden">
-            <div className="orange-stripe-background absolute top-0 left-5 h-10 w-[38%] mt-[9%] z-5" />
+        <div className="min-h-screen bg-[#0d7d6d] border-[#fff0d5] border-8 relative overflow-hidden">
+            <div className="orange-stripe-background absolute top-0 left-[4%] h-10 w-[38%] mt-[9%] z-5" />
             <div className="orange-dot absolute bottom-0 right-0 h-[60%] w-[15%]  z-10" />
 
             <div className="relative z-20">
-                <h1 className="mt-6 lg:mt-24 ml-6 text-7xl text-[#0d7d6d] font-bold">
+                <h1 className="mt-[6%] lg:mt-24 ml-[5%] text-7xl text-white font-bold">
                     My Projects
                     <span className="text-[#ff8e4d]">.</span>
                 </h1>

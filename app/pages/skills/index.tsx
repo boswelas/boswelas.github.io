@@ -32,9 +32,9 @@ export default function Skills() {
 
     return (
         <div className="max-h-[90%] lg:h-screen bg-[#0d7d6d] border-[#161c33] border-8 relative overflow-x-hidden">
-            <div className="absolute mt-[4%] h-20 lg:mt-20 ml-[2%] lg:ml-4 left-4 w-[95%] lg:w-[50%] lg:h-24 z-0 dot opacity-80" />
+            <div className="dot absolute mt-[4%] h-20 lg:mt-20 ml-[2%] lg:ml-8 left-4 w-[95%] lg:w-[50%] lg:h-24 z-0 opacity-80" />
             <div className="relative z-10">
-                <h1 className="mt-[6%] lg:mt-24 ml-[6%] text-7xl text-white font-bold">My skills
+                <h1 className="mt-[6%] lg:mt-24 ml-[5%] text-7xl text-white font-bold">My skills
                     <span className='text-[#161c33]'>.</span>
                 </h1>
             </div>

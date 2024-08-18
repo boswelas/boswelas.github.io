@@ -36,14 +36,14 @@ export default function Menu() {
             <ul className="flex justify-around p-4 font-semibold">
                 <li>
                     <Link href="#home" className="flex flex-col items-center gap-px">
-                        <span className={activeHash === "home" ? 'text-[#0d7d6d] font-bold' : activeHash === "projects" ? 'text-[#161c33]' : 'text-white'}>
+                        <span className={activeHash === "home" ? 'text-[#0d7d6d] font-bold' : 'text-white'}>
                             Home
                         </span>
                     </Link>
                 </li>
                 <li>
                     <Link href="#skills" className="flex flex-col items-center gap-px">
-                        <span className={activeHash === "skills" ? 'text-[#fff0d5] font-bold' : activeHash === "projects" ? 'text-[#161c33]' : 'text-white'}>
+                        <span className={activeHash === "skills" ? 'text-[#fff0d5] font-bold' : 'text-white'}>
                             Skills
                         </span>
                     </Link>
@@ -57,7 +57,7 @@ export default function Menu() {
                 </li>
                 <li>
                     <Link href="#contact" className="flex flex-col items-center gap-px">
-                        <span className={activeHash === "contact" ? 'text-[#0d7d6d] font-bold ' : activeHash === "projects" ? 'text-[#161c33]' : 'text-white'}>
+                        <span className={activeHash === "contact" ? 'text-[#0d7d6d] font-bold ' : 'text-white'}>
                             Contact
                         </span>
                     </Link>
