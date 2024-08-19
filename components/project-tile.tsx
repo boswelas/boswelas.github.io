@@ -23,11 +23,11 @@ export default function ProjectTile() {
     }, []);
 
     return (
-        <div className="mt-[3%] ml-[3%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="mt-8 ml-[3%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, index) => (
                 <div
                     key={index}
-                    className="group mb-[5%] h-96 w-80 bg-white border-[#fff0d5] border-[.1rem] rounded-xl shadow-xl hover:shadow-2xl relative overflow-hidden transition-all duration-300 hover:scale-105"
+                    className="group mb-[8%] h-96 w-80 ml-[5%] bg-white border-[#fff0d5] border-[.1rem] rounded-xl shadow-xl hover:shadow-2xl relative overflow-hidden transition-all duration-300 hover:scale-110"
                 >
                     <div className="h-[60%] w-full rounded-t-xl">
                         <img src={project.image} alt={project.name} className="h-full w-fit" />
