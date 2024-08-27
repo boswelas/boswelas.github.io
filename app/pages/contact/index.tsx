@@ -46,7 +46,7 @@ export default function Contact() {
                         <span className="text-xl">or reach out to me on social media.</span>
                         <div className="flex flex-row gap-8 items-center mt-4">
                             <div className="w-10 h-10 hover:opacity-80">
-                                <Link href={"https://www.linkedin.com/in/ashley-boswell-79334a207/"} target="blank">
+                                <Link href={"https://www.linkedin.com/in/ashleynboswell/"} target="blank">
                                     <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000"></img>
                                 </Link>
                             </div>
