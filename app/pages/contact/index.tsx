@@ -57,7 +57,7 @@ export default function Contact() {
                             </div>
                         </div>
                         <div className="mt-6 text-xl">
-                            <span>Did you get a chance to check out my <Link href={"https://drive.google.com/file/d/1Jq79wG_Zq-aBTrytyvMPnWwoXI_GCQpV/view?usp=sharing"} target="blank" className="underline text-[#0d7d6d] decoration-[#0d7d6d] underline-offset-4 font-semibold hover:text-[#109c87] hover:decoration-[#109c87]">resume</Link>
+                            <span>Did you get a chance to check out my <Link href={"https://drive.google.com/file/d/1LMo-u3KZimGZQaHUglkJ2Eoe7wwPL8d-/view?usp=sharing"} target="blank" className="underline text-[#0d7d6d] decoration-[#0d7d6d] underline-offset-4 font-semibold hover:text-[#109c87] hover:decoration-[#109c87]">resume</Link>
                                 ?
                             </span>
                         </div>
